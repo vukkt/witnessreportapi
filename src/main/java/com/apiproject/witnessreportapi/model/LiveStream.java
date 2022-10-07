@@ -8,7 +8,7 @@ public record LiveStream(String id, String title, String description, String url
     public LiveStream {
         if (id==null){
             throw new IllegalArgumentException("id cannot be null");
-            throw new IllegalArgumentException("id cannot be null");
+
         }
     }
 }
