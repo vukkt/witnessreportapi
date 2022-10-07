@@ -17,7 +17,7 @@ public class LiveStreamTest {
         stream.setDescription("");
         stream.setUrl("www.apitest.com");
         stream.setStartDate(LocalDateTime.of(year:2022,month:2,dayOfMonth: 3, hour:5, minute: 3));
-        stream.setEndDate(LocalDateTime.of(year:2022,month:2, dayOfMonth: 3, hour: 7, minute: 4));
+        stream.setEndDate(LocalDateTime.of(year:2022,month:2, dayOfMonth; 3, hour: 7, minute: 4));
     
     assertNotNull(stream);
     assertEquals(expected: "Building RESTful API", stream.getTitle(),message("works"));
@@ -26,8 +26,13 @@ public class LiveStreamTest {
     @Test
 
     void create_new_immutable_live_stream() {
-        ImmutableLiveStream stream = new ImmutableLiveStream(
-            UUID.randomUUID().toString(),
-        )
+        ImmutableLiveStream stream = new ImmutableLiveStream.builder()
+        .UUID.randomUUID().toString()
+        .title("Building RESTful API")
+                .description("")
+                .url( "www.apitest.com")
+                .LocalDateTime.of(year:2022,month:2,dayOfMonth: 3, hour:5, minute: 3)
+        LocalDateTime.of(year:2022,month:2,dayOfMonth: 3, hour:5, minute: 3));
+
     }
 }
