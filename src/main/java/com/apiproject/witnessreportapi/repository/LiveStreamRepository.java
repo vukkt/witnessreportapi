@@ -12,9 +12,9 @@ public class LiveStreamRepository {
 
     public LiveStreamRepository(){
         streams.add(new LiveStream(
-                UUID.randomUUID().toString(),title"",
+                UUID.randomUUID().toString(),title)"",
 
-        ));
+        );
     }
 
 }
